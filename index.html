@@ -1,43 +1,92 @@
-<!DOCTYPE html>
-<html>
-    <body>
-        <footer>
-            <link rel="stylesheet" href="https://raw.githubusercontent.com/LudvigDK/ChromeExtentionCredits/main/index.css">
-            <!-- The credit box -->
-            <div id="credit-box">
-                <!-- The main text -->
-                <h3 id="credit-text">This page was modified by {{ extension_name }} | Made by ItzLudvig!</h3>
-                <!-- The version text -->
-                <h3 id="version-text">{{ extension_version }}</h3>
-                <!-- Social media image links -->
-                <div id="socials">
-                    <!-- YouTube -->
-                    <a href="https://www.youtube.com/@itzludvig3381" class="social-icon">
-                        <img src="https://raw.githubusercontent.com/LudvigDK/ChromeExtentionCredits/main/icons8-youtube-240.png"
-                        width="50" height="50">
-                    </a>
-                    <!-- Patreon -->
-                    <a href="https://www.patreon.com/ItzLudvig" class="social-icon">
-                        <img src="https://raw.githubusercontent.com/LudvigDK/ChromeExtentionCredits/main/icons8-patreon-240.png"
-                        width="50" height="50">
-                    </a>
-                    <!-- Twitter -->
-                    <a href="https://twitter.com/ItzLudvig" class="social-icon">
-                        <img src="https://raw.githubusercontent.com/LudvigDK/ChromeExtentionCredits/main/icons8-twitter-240.png"
-                        width="50" height="50">
-                    </a>
-                    <!-- Twitch -->
-                    <a href="https://www.twitch.tv/itzludvig" class="social-icon">
-                        <img src="https://raw.githubusercontent.com/LudvigDK/ChromeExtentionCredits/main/icons8-twitch-240.png"
-                        width="50" height="50">
-                    </a>
-                    <!-- Instagram -->
-                    <a href="https://www.instagram.com/itz_ludvig/" class="social-icon">
-                        <img src="https://raw.githubusercontent.com/LudvigDK/ChromeExtentionCredits/main/icons8-instagram-240.png"
-                        width="50" height="50">
-                    </a>
-                </div>
-            </div>
-        </footer>
-    </body>
-</html>
+<!--   <link rel="stylesheet" href="https://raw.githubusercontent.com/LudvigDK/ChromeExtentionCredits/main/index.css">   -->
+
+
+<!-- Start of the css style for the entire html document -->
+<style>
+#credit-box {
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+
+    background: linear-gradient(90deg, rgb(31, 31, 31) 0%, rgb(61, 61, 61) 100%);
+    
+    width: 100%;
+    height: 100px;
+}
+
+#credit-text {
+    position: absolute;
+    left: 30px;
+    bottom: 50%;
+    transform: translate(0px, 50%);
+
+    margin: 0px;
+
+    color: white;
+}
+
+#version-text {
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    transform: translate(-50%, 50%);
+
+    margin: 0px;
+
+    color: white;
+}
+
+#socials {
+    position: absolute;
+    right: 30px;
+    bottom: 50%;
+    transform: translate(0px, 50%);
+
+    background-color: rgb(78, 78, 78);
+    border-radius: 15px;
+
+    padding: 5px;
+}
+
+.social-icon {
+    position: relative;
+}
+</style>
+<!-- End of the css style for the entire html document -->
+
+
+<!-- The credit box -->
+<div id="credit-box">
+    <!-- The main text -->
+    <h3 id="credit-text">This page was modified by {{ extension_name }} | Made by ItzLudvig!</h3>
+    <!-- The version text -->
+    <h3 id="version-text">{{ extension_version }}</h3>
+    <!-- Social media image links -->
+    <div id="socials">
+        <!-- YouTube -->
+        <a href="https://www.youtube.com/@itzludvig3381" class="social-icon">
+            <img src="https://raw.githubusercontent.com/LudvigDK/ChromeExtentionCredits/main/icons8-youtube-240.png"
+            width="50" height="50">
+        </a>
+        <!-- Patreon -->
+        <a href="https://www.patreon.com/ItzLudvig" class="social-icon">
+            <img src="https://raw.githubusercontent.com/LudvigDK/ChromeExtentionCredits/main/icons8-patreon-240.png"
+            width="50" height="50">
+        </a>
+        <!-- Twitter -->
+        <a href="https://twitter.com/ItzLudvig" class="social-icon">
+            <img src="https://raw.githubusercontent.com/LudvigDK/ChromeExtentionCredits/main/icons8-twitter-240.png"
+            width="50" height="50">
+        </a>
+        <!-- Twitch -->
+        <a href="https://www.twitch.tv/itzludvig" class="social-icon">
+            <img src="https://raw.githubusercontent.com/LudvigDK/ChromeExtentionCredits/main/icons8-twitch-240.png"
+            width="50" height="50">
+        </a>
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/itz_ludvig/" class="social-icon">
+            <img src="https://raw.githubusercontent.com/LudvigDK/ChromeExtentionCredits/main/icons8-instagram-240.png"
+            width="50" height="50">
+        </a>
+    </div>
+</div>
